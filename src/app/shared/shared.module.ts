@@ -4,6 +4,7 @@ import { TopheaderComponent } from './component/topheader/topheader.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { SliderComponent } from './component/slider/slider.component';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     TopheaderComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { RouterModule } from '@angular/router';
   exports: [
     TopheaderComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    SliderComponent
   ]
 })
 export class SharedModule { }
