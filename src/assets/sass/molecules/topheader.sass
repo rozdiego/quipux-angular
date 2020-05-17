@@ -1,0 +1,52 @@
+.qui-topheader
+    display: flex
+    justify-content: space-between
+    .breadcrumb
+        background-color: transparent
+        padding: 0
+        margin: 0
+        display: flex
+        align-content: center
+        align-items: center
+
+        .breadcrumb-item
+            text-transform: uppercase
+            padding: 20px 0px
+            margin: 0 6px
+            font-size: .8em
+
+            a
+                color: $gray_dark
+                text-decoration: none
+                font-weight: 300
+
+        .breadcrumb-item.active
+            color: $blue
+            border-bottom: 2px solid $blue
+
+    .breadcrumb-item + .breadcrumb-item::before
+        color: $gray_dark
+
+    .dropdown
+
+        a
+            text-decoration: none
+            display: flex
+            align-content: center
+            align-items: center
+            background-color: transparent
+            border: none
+            color: $gray_dark
+
+            span
+                margin-right: 15px
+
+        .dropdown-toggle::after
+            display: inline-block
+            margin-left: 0.255em
+            vertical-align: 0.255em
+            content: ""
+            border-top: 0.4em solid $blue
+            border-right: 0.4em solid transparent
+            border-bottom: 0 solid $blue
+            border-left: 0.4em solid transparent

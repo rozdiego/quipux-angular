@@ -1,0 +1,66 @@
+.qui-wrapper
+    background-color: $bg
+    height: 100vh
+    display: flex
+    flex-wrap: wrap
+    display: grid
+    grid-gap: 0px
+    grid-template-columns: 60px 1fr
+    grid-template-areas: "nav  topheader" "nav content" "nav footer"
+
+    nav
+        grid-area: nav
+        background-color: $blue_dark
+        position: fixed
+        top: 0
+        bottom: 0
+        width: 70px
+        padding: 10px
+        z-index: 3
+
+    nav.qui-navshow
+        width: 200px
+        padding: 0
+        transition: 1s
+
+    .qui-topheader
+        grid-area: topheader
+        background-color: white
+        box-shadow: 0px 1px 2px rgba(0, 0, 0,  .2)
+        height: 55px
+        position: fixed
+        top: 0
+        right: 0
+        left: 70px
+        display: flex
+        align-items: center
+        align-content: center
+        padding: 0 20px
+        z-index: 2
+
+    .qui-content
+        grid-area: content
+        background-color: $bg
+        height: 100%
+        position: fixed
+        top: 80px
+        left: 70px
+        right: 0px
+        padding: 20px
+
+    footer
+        grid-area: footer
+        background-color: $bg
+        height: 80px
+        position: fixed
+        bottom: 0
+        right: 0
+        left: 70px
+        padding: 20px
+        justify-content: center
+        margin: auto
+        text-align: center
+
+        img
+            text-align: center
+            width: 8%
