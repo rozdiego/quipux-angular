@@ -1,6 +1,5 @@
 .qui-nav
-    text-align: center
-    display: flex
+    display: block
     width: max-content
     align-content: center
     align-items: center
@@ -13,17 +12,19 @@
 
         &:checked
             & ~ .qui-menu
-                width: 200px
+                width: 260px
 
             & ~ .logoimg
-                display: block
+                display: inline-block
                 position: relative
                 z-index: 5
                 width: 50%
-                margin-left: 20px
-                margin-top: 10px
+                margin-left: 42px
+                margin-top: 20px
             & ~ label
                 margin: 0 5px
+                top: -7px
+                left: 5px
 
             & ~ .qui-menu
                 .card
@@ -114,7 +115,10 @@
         margin: auto
         text-align: center
         position: relative
+        top: 10px
+        left: 5px
         z-index: 5
+        display: inline-block
 
     .qui-menu
         padding: 10px
@@ -127,6 +131,7 @@
         background-color: $blue_dark
 
     .qui-menu-link
+        margin-top: 100px
         span
             font-size: 1.5em
             color: $white
@@ -149,6 +154,7 @@
                         padding: 20px 0
                         text-decoration: none
                         justify-content: center
+                        border: none
                         h6
                             display: none
                         span
